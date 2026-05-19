@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Loops;
 
 import java.util.Scanner;
 

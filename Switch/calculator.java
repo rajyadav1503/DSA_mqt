@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Switch;
 
 import java.util.Scanner;
 

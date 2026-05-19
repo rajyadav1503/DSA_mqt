@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Operators;
 
 public class IncrementDecrement {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package DSA_mqt;
+package DSA_mqt.Switch;
 
 import java.util.Scanner;
 
-public class AccesSwitch {
+public class AccesRole {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String role = sc.nextLine();
