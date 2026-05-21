@@ -15,7 +15,5 @@ public class fibonacci {
             firstNum = secondNum;
             secondNum = nextNum;
         }
-        
-    
     }
 }

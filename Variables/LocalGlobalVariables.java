@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Variables;
 
 class Hi{
     static int x = 10;

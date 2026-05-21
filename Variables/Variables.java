@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Variables;
 
 public class Variables {
     public static int num;

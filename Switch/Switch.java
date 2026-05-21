@@ -1,4 +1,4 @@
-package DSA_mqt;
+package DSA_mqt.Switch;
 
 public class Switch {
     void fun1(){
