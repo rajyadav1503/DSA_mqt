@@ -1,4 +1,4 @@
-package DSA_mqt.Functions;
+package DSA_mqt.Functions.FunctionsProblems;
 
 public class Addition {
 

@@ -1,7 +1,13 @@
 package DSA_mqt.Functions;
 
 public class fun1 {
-    public static int divide(int a, int b){    //No need to creste object
+    int a = 5;   //Gloabal scope
+
+    // Functions helps in : readability ; reusability ; modularity(complex problem into small parts)
+
+    // Static variables and static methods are stored in stack memory 
+
+    public static int divide(int a, int b){    //No need to create object
         return a/b;
     }
     public int mul(int a, int b){    // we need to create object to access it 
@@ -12,11 +18,11 @@ public class fun1 {
             int v = 4;   // This is local Variable with function scope
             if(2+3==6){
                 int c=3;  // This is block variable which has block scope 
-                int b=5;
+                int d=5;
             }
 
-            static int num1 =0;
-            int num2 = 1;       // This is instance Variable
+            int num1 =0;
+            int num2 = 1;       
     }
 
     public static void main(String[] args) {
