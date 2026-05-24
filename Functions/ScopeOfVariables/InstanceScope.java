@@ -1,4 +1,4 @@
-package DSA_mqt.Functions;
+package DSA_mqt.Functions.ScopeOfVariables;
 
 /**
  * Java variables typically fall into one of four primary scopes:
@@ -24,10 +24,10 @@ package DSA_mqt.Functions;
  */
 
 
-public class ScopeOfVariables {
+public class InstanceScope {
     
-    int a = 10;
-    int b = 20;
+    int a = 10;    //Instance Variable (inside class , outside methods)
+    int b = 20;    //They copy of instance variables is available for all objects.
 
     int add(int a){
         
@@ -36,7 +36,7 @@ public class ScopeOfVariables {
     }
 
     public static void main(String[] args) {
-        ScopeOfVariables obj = new ScopeOfVariables();
+        InstanceScope obj = new InstanceScope();
         int result = obj.add(6);
         System.out.println(result);
     }

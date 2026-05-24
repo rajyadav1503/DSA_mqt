@@ -4,9 +4,11 @@ package DSA_mqt.Functions;
 
     // Static variables and static methods are stored in stack memory
 
+    //in java only pass by value works.
+
 /* Functions and thier variables are created in stack memory.
 
     */ 
-public class FunBasic {
+public class FunIntro {
     
 }
