@@ -1,0 +1,48 @@
+What is function ?
+Why do we use function ?
+what are components of function ?
+
+Q: Sequential flow of function ?
+Q: Context of function? (function scope , global scope , local scope , block scope)
+
+Q: Local variable table(LVT) in stack ?
+stack frame ?
+which is fastest ? heap or stack?
+Stack vs Heap?
+Q: How objects are stored?
+
+Q: call by value and call by reference?
+
+what are parameterized function ?
+Ans : Those function which takes atleast one or more than one parameters.
+
+what are non-parameterized function ?
+Ans : Those function which does not take any parameters.
+
+We can use return in a void function ? - Yes , but no return statement after that.
+
+Q: Global scope , functional scope , block scope.
+
+Stack vs Heap ?
+array is stored in heap memory.
+
+function OverLoading ?
+Same function name but different parameters (either number of parameters) or different return type.
+
+Q:Function OverRiding?
+Ans: same function name but the behavior is different in the sub-class.
+    We use the annotation - @Override
+    Note : Static and final methods can not be Overrided.
+
+Recursive Function ?
+ans : Functions calling itself.
+
+
+Must Questions :
+1. Create a function void return type with parameters and arguments.
+2. nCr calculate
+3. nPr calculate.
+4. replace 0 with 5 in a number.
+5. Write a function to demonstrate the string concatenation , like a personalised greeting,Name passed in arguments
+
+

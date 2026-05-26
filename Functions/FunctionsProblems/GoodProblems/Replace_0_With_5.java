@@ -1,7 +1,9 @@
 package DSA_mqt.Functions.FunctionsProblems.GoodProblems;
 
 public class Replace_0_With_5 {
-       // Edge case: if the input is 0, the answer is immediately 5
+
+       public static int replace(int n) {
+        // Edge case: if the input is 0, the answer is immediately 5
         if (n == 0) {
             return 5;
         }
@@ -32,4 +34,6 @@ public class Replace_0_With_5 {
         int ans = replace(1004);
         System.out.println(ans);
     }
+
+    
 }
