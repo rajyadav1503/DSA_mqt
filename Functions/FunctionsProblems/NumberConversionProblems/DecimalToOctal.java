@@ -1,4 +1,4 @@
-package DSA_mqt.Functions.FunctionsProblems.GoodProblems;
+package DSA_mqt.Functions.FunctionsProblems.NumberConversionProblems;
 
 public class DecimalToOctal {
      static int convert(int n){
