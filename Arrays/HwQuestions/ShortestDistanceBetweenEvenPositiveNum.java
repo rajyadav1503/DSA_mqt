@@ -1,30 +1,50 @@
 package DSA_mqt.Arrays.HwQuestions;
 
 public class ShortestDistanceBetweenEvenPositiveNum {
-       static int shortest(int[] arr){
+    //    static int shortest(int[] arr){
 
-        int firstEven = 0;
-        int secondEven = 0;
+    //     int firstEven = 0;
+    //     int secondEven = 0;
+    //     for(int i=0;i<arr.length;i++){
+    //         if(arr[i]%2==0){
+    //             firstEven += i;
+    //             break;
+    //         }
+
+    //     }
+    //     for(int i=firstEven+1;i<arr.length;i++){
+    //         if(arr[i]%2==0){
+    //             secondEven += i;
+    //             break;
+    //         }
+    //     }
+    //     int dist = secondEven - firstEven;
+    //     if(dist==0 || secondEven==0) return -1;
+    //     return dist;
+    // }
+     static int shortest(int[] arr){
+
+        int res = -1;
         for(int i=0;i<arr.length;i++){
-            if(arr[i]%2==0){
-                firstEven += i;
-                break;
-            }
 
-        }
-        for(int i=firstEven+1;i<arr.length;i++){
+            // [1,2,3,5,6,2,14]
             if(arr[i]%2==0){
-                secondEven += i;
-                break;
+                for(int j=0;j<arr.length;j++){
+                    if(arr[j]%2==0){
+                        if(res == -1) res = j-i;
+                        res=Math.min(res , j-i);
+                        break;
+
+                    }
+
+                }
             }
         }
-        int dist = secondEven - firstEven;
-        if(dist==0 || secondEven==0) return -1;
-        return dist;
+        return res;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,5,7,6,9};
+        int[] arr = {1,2,3,5,6,2,14};
         int ans1 = shortest(arr);
         System.out.println(ans1);
 
