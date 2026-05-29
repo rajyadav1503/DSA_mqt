@@ -1,5 +1,6 @@
 package DSA_mqt.Arrays.HwQuestions;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CountElementsLessThanX {
@@ -26,5 +27,6 @@ public class CountElementsLessThanX {
         }
         int ans = count(arr);
         System.out.println(ans);
+        System.out.println(Arrays.toString(arr));
     }
 }

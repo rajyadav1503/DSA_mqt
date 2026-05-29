@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class SubtractTwoArrayWithBorrow {
      static int[] subtract(int n,int[] arr1,int m,int[]arr2){
+        
         //Here We assume that arr1 >= arr2
+
         int[] res = new int[n];
         int i=n-1;
         int j=m-1;
@@ -24,7 +26,6 @@ public class SubtractTwoArrayWithBorrow {
             i--;
             j--;
             k--;
-
         }
         return res;
     }
