@@ -27,6 +27,16 @@ public class SubtractTwoArrayWithBorrow {
             j--;
             k--;
         }
+        
+        if(res[0]==0){
+
+            int[] ans = new int[res.length-1];
+            for(int x=0;x<ans.length;x++){
+                ans[x]=res[x+1];
+            }
+            return ans;
+        }
+
         return res;
     }
 

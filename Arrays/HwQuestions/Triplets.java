@@ -36,7 +36,7 @@ public class Triplets {
     //             //As the array is sorted
 
     //             if (midVal * midVal == leftVal * rightVal){
-    //                 if(rightVal % leftVal == ){   //Some other fraction can also satisfy j*j , example {4,6,9};
+    //                 if(rightVal % leftVal == 0 ){   //Some other fraction can also satisfy j*j , example {4,6,9};
     //                     System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
     //                 }
     //                 i--;

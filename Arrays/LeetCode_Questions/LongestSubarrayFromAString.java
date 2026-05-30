@@ -2,7 +2,7 @@ package DSA_mqt.Arrays.LeetCode_Questions;
 
 public class LongestSubarrayFromAString {
     // Sliding Window Question
-
+     // to find lenght of longest sub-array with non repeating characters.
     //This is a bruteForce Approach
     static int longest(String s){
         int maxLength = 0;
