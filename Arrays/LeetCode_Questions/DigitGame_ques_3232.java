@@ -1,3 +1,5 @@
+package DSA_mqt.Arrays.LeetCode_Questions;
+
 public class DigitGame_ques_3232 {
 
 //You are given an array of positive integers nums.

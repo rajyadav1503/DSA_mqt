@@ -1,3 +1,5 @@
+package DSA_mqt.Arrays.LeetCode_Questions;
+
 public class DigitEqualToIndex_ques3550 {
     
     // to find a smallest index in the array at which the value of sum of digits of the number is equal to the index .

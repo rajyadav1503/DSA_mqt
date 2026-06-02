@@ -16,6 +16,8 @@ public class RotateArray {
 
     //IF rotate by d places to the left .
     static void rotateBy_d(int[] arr , int d){
+
+        d = d%arr.length;   // imp to do this if we rotate more than arr length
         int[] temp = new int[d];
         for(int i=0;i<d;i++){      //Storing starting d elements in temp array;
             temp[i]=arr[i];

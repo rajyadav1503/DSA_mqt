@@ -1,3 +1,5 @@
+package DSA_mqt.Arrays.LeetCode_Questions;
+
 public class MissingNumber_Q_268 {
     public static void main(String[] args) {
         int[] arr={3,0,1};   //2 is missing
