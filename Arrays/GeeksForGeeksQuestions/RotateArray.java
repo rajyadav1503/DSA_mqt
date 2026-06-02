@@ -8,10 +8,12 @@ public class RotateArray {
     // Example : rotate the array {1,2,3,4,5} by 2 places the it becomes {3,4,5,1,2}
     // Trick : First reverse the starting d elements , then reverse the elements from d to last index .
     // Then reverse the whole array
+    //This will Take Time complexity of O(n). 
+
     static void rotateArr(int arr[], int d) {
         int left = 0;
         int right = d-1 ;
-        while(left<right){
+        while(left<right){           // O(d)
             int temp = arr[left];
             arr[left]=arr[right];
             arr[right]=temp;
@@ -20,7 +22,7 @@ public class RotateArray {
         }
         int left2 = d;
         int right2= arr.length-1;
-        while(left2<right2){
+        while(left2<right2){         // O(n-d)
             int temp = arr[left2];
             arr[left2]=arr[right2];
             arr[right2]=temp;
@@ -29,7 +31,7 @@ public class RotateArray {
         }
         int left3 = 0;
         int right3 = arr.length-1;
-        while(left3<right3){
+        while(left3<right3){           // O(n)
             int temp = arr[left3];
             arr[left3]=arr[right3];
             arr[right3]=temp;
