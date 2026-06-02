@@ -4,46 +4,37 @@ import java.util.Arrays;
 
 public class RotateArray {
 
-    // rotate an array by d places to the left
-    // Example : rotate the array {1,2,3,4,5} by 2 places the it becomes {3,4,5,1,2}
-    // Trick : First reverse the starting d elements , then reverse the elements from d to last index .
-    // Then reverse the whole array
-    //This will Take Time complexity of O(n). 
+        // if rotate an array to left by just 1 time.
+    static void rotateBy1(int[] arr){
+        int temp = arr[0];    //Store the first element in temp , then bring the other elements forward by one place , then add tep in the last.
+        for(int i=1;i<arr.length;i++){
+            arr[i-1]=arr[i];
+        }
+        arr[arr.length-1]=temp;
 
-    static void rotateArr(int arr[], int d) {
-        int left = 0;
-        int right = d-1 ;
-        while(left<right){           // O(d)
-            int temp = arr[left];
-            arr[left]=arr[right];
-            arr[right]=temp;
-            left++;
-            right--;
-        }
-        int left2 = d;
-        int right2= arr.length-1;
-        while(left2<right2){         // O(n-d)
-            int temp = arr[left2];
-            arr[left2]=arr[right2];
-            arr[right2]=temp;
-            left2++;
-            right2--;
-        }
-        int left3 = 0;
-        int right3 = arr.length-1;
-        while(left3<right3){           // O(n)
-            int temp = arr[left3];
-            arr[left3]=arr[right3];
-            arr[right3]=temp;
-            left3++;
-            right3--;
-        }
-        System.out.println(Arrays.toString(arr));
     }
+
+    //IF rotate by d places to the left .
+    static void rotateBy_d(int[] arr , int d){
+        int[] temp = new int[d];
+        for(int i=0;i<d;i++){      //Storing starting d elements in temp array;
+            temp[i]=arr[i];
+        }
+        for(int i=d;i<arr.length;i++){   //Bring the last elements after d towards the first.
+            arr[i-d]=arr[i];
+        }
+        for(int i=arr.length-d;i<arr.length;i++){    // Add the temp array at the last .
+            arr[i] = temp[i-(arr.length-d)];
+        }
+
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
         int rotate_value = 3;
-        rotateArr(arr, rotate_value);
-        System.out.println(Arrays.toString(arr));
+
+        rotateBy_d(arr,rotate_value);
+        System.out.println(Arrays.toString(arr));     // Array will be rotated by towards left. // [4,5,1,2,3]
     }
 }
+   
