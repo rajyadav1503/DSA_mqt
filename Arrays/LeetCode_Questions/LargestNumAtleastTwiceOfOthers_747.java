@@ -27,7 +27,7 @@ public class LargestNumAtleastTwiceOfOthers_747 {
         
     }
     public static void main(String[] args) {
-        int[] arr = {3,6,1,0};
+        int[] arr = {3,6,1,0};      //index 1 has largest number and satisfies the condition.
         int ans = dominantIndex(arr);
         System.out.println(ans);
     }
