@@ -21,21 +21,19 @@ public class ValidPalindromeII_680 {
     // if any case results in palindrome in further check , then it is a valid palindrome.
 
     public static boolean validPalindrome(String s) {
-        int i=0;
-        int j=s.length()-1;
+        int i = 0;
+        int j= s.length()-1;
         while(i<j){
-            char left=s.charAt(i);
+            char left = s.charAt(i);
             char right = s.charAt(j);
             if(left!=right){
-                return (PalindromeCheck(i+1,j,s) || PalindromeCheck(i,j-1,s));
-            
+                return (PalindromeCheck(i+1, j, s) || PalindromeCheck(i, j-1, s));
             }else{
                 i++;
                 j--;
             }
-
         }
-        return true;
+        return false;
     }
 
     public static void main(String[] args) {
