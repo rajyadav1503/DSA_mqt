@@ -1,4 +1,4 @@
-package DSA_mqt.Arrays.LeetCode_Questions;
+package DSA_mqt.Arrays.TwoPointers;
 
 import java.util.Arrays;
 

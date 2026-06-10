@@ -1,4 +1,4 @@
-package DSA_mqt.Arrays.LeetCode_Questions;
+package DSA_mqt.Arrays.TwoPointers;
 
 public class ValidPalindromeII_680 {
     // A string is a valid palindrome if after reoving at most 1 element , it is a palindrome.
