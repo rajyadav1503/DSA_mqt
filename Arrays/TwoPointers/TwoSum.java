@@ -25,13 +25,13 @@ public class TwoSum {
 
     public static int[] twoSum2(int[] nums, int target) {
         // using hashmap
-        int[] arr=new int[2];     // to store the index value ;
         //create hashmap;
         Map<Integer,Integer> map = new HashMap<>();
 
         for(int i=0;i<nums.length;i++){   
             int lookingFor = target - nums[i];  
             if(map.containsKey(lookingFor)){
+                // As the order of returning the indexes is not fixed . we can return the indexes in any order.
                 return new int[]{i , map.get(lookingFor)};  // here index is stored as the value and the number as key.
             }
             // if its not there , then store the nums[i] with its index in the HashMap;
